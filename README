@@ -1,0 +1,18 @@
+Simple Validation
+================
+
+ActiveRecord validation with less typing
+
+Example
+=======
+
+class Product < ActiveRecord::Base
+  validation do
+    required :name, :price
+    length   :name, :in => 5..100
+  end
+end
+
+all active record validations are supported
+
+Copyright (c) 2009 Joshua Nussbaum, released under the MIT license
